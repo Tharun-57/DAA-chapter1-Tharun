@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    // Test Case 1
+    int test_case_1[] = {1, 2, 3, 4, 5};
+    int size_1 = sizeof(test_case_1) / sizeof(test_case_1[0]);
+    
+    // Test Case 2
+    int test_case_2[] = {5, 4, 3, 2, 1};
+    int size_2 = sizeof(test_case_2) / sizeof(test_case_2[0]);
+    
+    // Test Case 3
+    int test_case_3[] = {2, 4, 6, 8, 10};
+    int size_3 = sizeof(test_case_3) / sizeof(test_case_3[0]);
+    
+    return 0;
+}
