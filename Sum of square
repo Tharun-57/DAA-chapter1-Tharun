@@ -1,0 +1,18 @@
+#include<stdio.h>
+int sumOfSquares(int* nums, int numsSize) {
+    int sum = 0;
+    for (int i = 0; i < numsSize; i++) {
+        int count = 0;
+        int freq[numsSize + 1];
+        memset(freq, 0, sizeof(freq));
+        for (int j = i; j < numsSize; j++) {
+            if (freq[nums[j]] == 0) {
+                count++;
+            }
+            freq[nums[j]]++;
+            sum += count * count;
+        }
+    }
+    return sum;
+}
+
